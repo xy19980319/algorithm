@@ -12,11 +12,11 @@ public class TestDemo {
         ListNode l1 = null;
         l1 = new ListNode(1);
         l1.next = new ListNode(2);
-       // l1.next.next = new ListNode(3);
-        //l1.next.next.next = new ListNode(4);
-       // l1.next.next.next.next = new ListNode(5);
+        l1.next.next = new ListNode(3);
+        l1.next.next.next = new ListNode(4);
+        l1.next.next.next.next = new ListNode(5);
         Solution s = new Solution();
-        ListNode listNode = s.rotateRight(l1, 5);
+        ListNode listNode = s.rotateRight(l1, 1);
         System.out.println(listNode);
     }
 }
